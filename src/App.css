@@ -291,3 +291,9 @@
 .tableParentBox table tr td .rankingsBlock .moreDiv span:last-child svg {
   vertical-align: middle;
 }
+.filterContainer{
+  background-color: lightcyan;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
