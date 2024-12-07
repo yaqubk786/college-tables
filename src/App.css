@@ -1,0 +1,293 @@
+/* .mainBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+.mainBox {
+  padding: 30px;
+}
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+}
+.tableParentBox table {
+  width: 100%;
+}
+.tableParentBox table,
+.tableParentBox table tr th,
+.tableParentBox table tr td {
+  border: 1px solid #dedede;
+  border-collapse: collapse;
+}
+.tableParentBox table tr th {
+  padding: 12px;
+  background-color: #88bdc4;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: left;
+}
+.tableParentBox table tr td {
+  padding: 8px 14px;
+  vertical-align: top;
+}
+.tableParentBox table tr td:nth-child(2) {
+  padding: 8px 14px 20px 14px;
+}
+.tableParentBox table tr td .clgInfoBox {
+  display: flex;
+  flex-direction: column;
+}
+.tableParentBox table tr td .clgInfo {
+  display: flex;
+  margin-bottom: 10px;
+}
+.tableParentBox table tr td .clgInfo .clgLogo {
+  margin-right: 8px;
+  border-radius: 50%;
+  height: 43px;
+  width: 43px;
+  background-color: red;
+}
+.tableParentBox table tr td .clgInfoBox .clgAddress {
+  line-height: 15px;
+  color: #666;
+}
+.tableParentBox table tr td .clgInfoBox .clgAddress a {
+  font-size: 16px;
+  color: #4fb8dd;
+  cursor: pointer;
+}
+.tableParentBox table tr td .clgInfoBox .clgAddress .subInfo {
+  font-size: 11px;
+  margin-top: 8px;
+}
+.tableParentBox table tr td .clgInfoBox .clgAddress .clgCourse {
+  background: #fff9e4;
+  border-left: 2px solid #ff7900;
+  margin-top: 8px;
+  position: relative;
+  width: fit-content;
+}
+
+.tableParentBox table tr td .clgInfoBox .clgAddress .clgCourse::before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-top: 20px solid rgba(0, 0, 0, 0);
+  border-bottom: 20px solid rgba(0, 0, 0, 0);
+  border-left: 10px solid #fff9e4;
+}
+.tableParentBox table tr td .clgInfoBox .clgAddress .clgCourse button {
+  color: #333;
+  line-height: 15.4px;
+  max-width: 80vw;
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 4px 10px 4px 6px;
+  font-size: 12px;
+  background: transparent;
+  text-align: left;
+}
+
+.tableParentBox table tr td .clgInfoBox .clgAddress .clgCourse .courseName {
+  color: #ff7900;
+  margin-bottom: 2px;
+}
+.tableParentBox table tr td .clgInfoBox .clgCta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tableParentBox table tr td .clgInfoBox .clgCta button {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 23px;
+}
+.tableParentBox table tr td .clgInfoBox .clgCta button span:nth-child(1) {
+  margin-right: 4px;
+}
+.tableParentBox table tr td .clgInfoBox .clgCta .applyBtn {
+  color: #ff7900;
+}
+.tableParentBox table tr td .clgInfoBox .clgCta .dwnldBtn {
+  color: #3eae8d;
+}
+.tableParentBox table tr td .courseFeeBlock .fees {
+  color: #3eae8d;
+  font-size: 16px;
+  margin: 0 0 4px;
+  font-weight: bold;
+}
+.tableParentBox table tr td .courseFeeBlock .year {
+  font-size: 11px;
+  color: #666;
+  margin: 0 0 4px;
+  line-height: 22px;
+}
+.tableParentBox table tr td .courseFeeBlock button,
+.tableParentBox table tr td .placementBlock button {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff7900;
+  border: none;
+  padding: 0;
+  line-height: 22px;
+}
+.tableParentBox table tr td .courseFeeBlock button span:nth-child(1) svg,
+.tableParentBox table tr td .placementBlock button span:nth-child(1) svg {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.tableParentBox table tr td .courseFeeBlock button span:nth-child(2) svg,
+.tableParentBox table tr td .placementBlock button span:nth-child(2) svg {
+  font-size: 12px;
+  vertical-align: middle;
+}
+.tableParentBox table tr td .placementBlock .fees {
+  color: #3eae8d;
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+.tableParentBox table tr td .placementBlock .package {
+  color: #666;
+  font-size: 11px;
+  margin: 0 0 4px;
+}
+.tableParentBox table tr td .reviewsBlock .rateBox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.tableParentBox table tr td .reviewsBlock .rateBox .circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ffa100;
+}
+.tableParentBox table tr td .reviewsBlock .rateBox .rating {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #666;
+}
+.tableParentBox table tr td .reviewsBlock .reviewsText {
+  line-height: 15px;
+  color: #666;
+  font-size: 11px;
+  margin: 0;
+}
+.tableParentBox table tr td .reviewsBlock .socialBox {
+  margin-top: 8px;
+  padding: 2px 6px;
+  font-size: 11px;
+  line-height: 15px;
+  background: #fff9e4;
+  padding: 2px 6px;
+  color: #c86c80;
+  width: fit-content;
+  position: relative;
+}
+.tableParentBox table tr td .reviewsBlock .socialBox::before,
+.tableParentBox table tr td .reviewsBlock .socialBox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-top: 10px solid rgba(0, 0, 0, 0);
+  border-bottom: 10px solid rgba(0, 0, 0, 0);
+}
+.tableParentBox table tr td .reviewsBlock .socialBox::before {
+  left: -8px;
+  border-right: 10px solid #fff9e4;
+}
+.tableParentBox table tr td .reviewsBlock .socialBox::after {
+  right: -8px;
+  border-left: 10px solid #fff9e4;
+}
+.tableParentBox table tr td .rankingsBlock .rankDiv {
+  color: #666;
+  font-weight: 400;
+  font-size: 16px;
+}
+.tableParentBox table tr td .rankingsBlock .rankDiv span {
+  color: #ff7900;
+}
+.tableParentBox table tr td .rankingsBlock .yearDiv span {
+  display: flex;
+  gap: 4px;
+  color: #666;
+}
+.tableParentBox table tr td .rankingsBlock .yearDiv span img {
+  max-width: 43px;
+  height: 25px;
+  filter: grayscale(1);
+}
+.tableParentBox table tr td .rankingsBlock .moreDiv {
+  background: #eaf9fe;
+  border-left: 2px solid #42aee8;
+  gap: 4px;
+  width: 145px;
+  padding: 4px 6px;
+  margin-top: 8px;
+  position: relative;
+  font-size: 14px;
+  color: #42aee8;
+}
+.tableParentBox table tr td .rankingsBlock .moreDiv:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-top: 14px solid rgba(0, 0, 0, 0);
+  border-bottom: 14px solid rgba(0, 0, 0, 0);
+  border-left: 9px solid #eaf9fe;
+}
+.tableParentBox table tr td .rankingsBlock .moreDiv,
+.tableParentBox table tr td .rankingsBlock .moreDiv .circleBox {
+  display: flex;
+  align-items: center;
+}
+.tableParentBox table tr td .rankingsBlock .moreDiv .circleBox div {
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+}
+.tableParentBox
+  table
+  tr
+  td
+  .rankingsBlock
+  .moreDiv
+  .circleBox
+  div:nth-child(2) {
+  margin-left: -8px;
+}
+.tableParentBox
+  table
+  tr
+  td
+  .rankingsBlock
+  .moreDiv
+  .circleBox
+  div:nth-child(3) {
+  margin-left: -8px;
+}
+.tableParentBox table tr td .rankingsBlock .moreDiv span:last-child svg {
+  vertical-align: middle;
+}
