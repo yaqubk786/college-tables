@@ -13,9 +13,11 @@ const App = () => {
 
   useEffect(() => {
     setData(collegesData);
+   
+    
   }, []);
 
-  console.log(data, "data");
+  console.log(data, "dta");
   return (
     <>
       <div className="mainBox">
