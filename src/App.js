@@ -10,16 +10,24 @@ import { collegesData } from "./dummyData";
 
 const App = () => {
   const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const [displayData, setDisplayData] = useState([]);
   const [sortField, setSortField] = useState("");
-  const [order, setOrder] = useState("");
+  const [order, setOrder] = useState("ascending");
+  const [searchText, setSearchText] = useState("");
+  const [page, setPage] = useState(1);
+  const [isLoading, setIsLoading] = useState(false);
+  const itemsPerPage = 10;
   console.log(data, "data");
 
   useEffect(() => {
     setData(collegesData);
+    setFilteredData(collegesData);
+    setDisplayData(collegesData.slice(0, itemsPerPage));
   }, []);
 
-  const sortingData = (field, order) => {
-    const sortedData = [...data];
+  const sortingData = (field, order, dataToSort) => {
+    const sortedData = [...dataToSort];
     sortedData.sort((a, b) => {
       let firstValue = a[field];
       let secondValue = b[field];
@@ -28,11 +36,6 @@ const App = () => {
       if (field === "course_fees") {
         firstValue = parseInt(firstValue.replace(/[^\d]/g, ""));
         secondValue = parseInt(secondValue.replace(/[^\d]/g, ""));
-        console.log(
-          firstValue,
-          secondValue,
-          "ppppppppppppppppppppppppppppppppppp"
-        );
       }
       if (field === "user_reviews") {
         firstValue = parseFloat(a.user_reviews.rating);
@@ -48,21 +51,54 @@ const App = () => {
         return secondValue - firstValue;
       }
     });
-    setData(sortedData);
+    return sortedData;
   };
 
   useEffect(() => {
-    sortingData(sortField, order);
-  }, [sortField, order]);
+    const filtered = data.filter((college) =>
+      college.college.toLowerCase().includes(searchText.toLowerCase())
+    );
+    const sorted = sortingData(sortField, order, filtered);
+    setFilteredData(sorted);
+    setDisplayData(sorted.slice(0, page * itemsPerPage));
+  }, [searchText, sortField, order, data, page]);
 
-  console.log(sortField, "sortField");
+  const handleScroll = () => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop >=
+        document.documentElement.offsetHeight &&
+      !isLoading
+    ) {
+      setIsLoading(true);
+      setTimeout(() => {
+        setPage((prevPage) => prevPage + 1);
+        setIsLoading(false);
+      }, 2000);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isLoading]);
+
+  console.log(data, "data data data data");
   return (
     <>
       <div className="mainBox">
-        <h1>ASSignment</h1>
+        <h1>Showing Data for {data.length} different colleges</h1>
         <div className="tableContainer">
           <div className="filterContainer">
-            <div>searches</div>
+            <div className="searchBox">
+              <input
+                type="text"
+                placeholder="Search by college name..."
+                value={searchText}
+                onChange={(e) => setSearchText(e.target.value)}
+              />
+            </div>
             <div>
               <span>Sort By:</span>
               <label>
@@ -130,10 +166,16 @@ const App = () => {
                 <th>User reviews</th>
                 <th>Rankings</th>
               </tr>
-              {data.map((college, index) => (
-                <tr key={index}>
+              {displayData.map((college, index) => (
+                <tr
+                  key={index}
+                  className={college.featured ? "featuredBg" : ""}
+                >
                   <td>#{college.rank}</td>
-                  <td>
+                  <td className="featuredContainer">
+                    {college.featured && (
+                      <div className="featureImg">Featured</div>
+                    )}
                     <div className="clgInfoBox">
                       <div className="clgInfo">
                         <a className="clgLogo">
@@ -275,6 +317,7 @@ const App = () => {
                 </tr>
               ))}
             </table>
+            {isLoading && <p className="loadingText">Loading...</p>}
           </div>
         </div>
       </div>

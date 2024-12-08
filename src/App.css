@@ -1,11 +1,8 @@
-/* .mainBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
 .mainBox {
   padding: 30px;
+}
+.mainBox h1 {
+  text-align: center;
 }
 .tableContainer {
   display: flex;
@@ -13,6 +10,13 @@
 }
 .tableParentBox table {
   width: 100%;
+}
+.mainBox .tableContainer .filterContainer .searchBox input {
+  width: 300px;
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid #dedede;
+  padding: 4px;
 }
 .tableParentBox table,
 .tableParentBox table tr th,
@@ -32,7 +36,7 @@
   vertical-align: top;
 }
 .tableParentBox table tr td:nth-child(2) {
-  padding: 8px 14px 20px 14px;
+  padding: 11px 14px 20px 14px;
 }
 .tableParentBox table tr td .clgInfoBox {
   display: flex;
@@ -291,9 +295,35 @@
 .tableParentBox table tr td .rankingsBlock .moreDiv span:last-child svg {
   vertical-align: middle;
 }
-.filterContainer{
+.filterContainer {
   background-color: lightcyan;
   display: flex;
   justify-content: space-between;
   padding: 8px 16px;
+}
+
+.featuredBg {
+  background-color: #fdf3ec;
+}
+.tableParentBox .featuredContainer {
+  position: relative;
+}
+.tableParentBox .featuredContainer .featureImg {
+  position: absolute;
+  width: 95px;
+  height: 15px;
+  background-image: url("https://image-static.collegedunia.com/public/asset/img/featured-flag.svg");
+  background-repeat: no-repeat;
+  top: -4px;
+  left: 1px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.loadingText {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
