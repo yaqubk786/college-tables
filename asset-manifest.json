@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/college-tables/static/css/main.db210784.css",
-    "main.js": "/college-tables/static/js/main.09066d6c.js",
+    "main.css": "/college-tables/static/css/main.da86bbe7.css",
+    "main.js": "/college-tables/static/js/main.14b32dde.js",
     "static/js/453.07b51e5c.chunk.js": "/college-tables/static/js/453.07b51e5c.chunk.js",
     "index.html": "/college-tables/index.html",
-    "main.db210784.css.map": "/college-tables/static/css/main.db210784.css.map",
-    "main.09066d6c.js.map": "/college-tables/static/js/main.09066d6c.js.map",
+    "main.da86bbe7.css.map": "/college-tables/static/css/main.da86bbe7.css.map",
+    "main.14b32dde.js.map": "/college-tables/static/js/main.14b32dde.js.map",
     "453.07b51e5c.chunk.js.map": "/college-tables/static/js/453.07b51e5c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db210784.css",
-    "static/js/main.09066d6c.js"
+    "static/css/main.da86bbe7.css",
+    "static/js/main.14b32dde.js"
   ]
 }
