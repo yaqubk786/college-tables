@@ -71,7 +71,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.5,
       based_on: "270 User Reviews",
-      highlight: "Best for Research",
+      highlight: "Best in Research",
     },
     ranking: "#05/745 in India 2025",
   },
