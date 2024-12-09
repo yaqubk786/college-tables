@@ -13,7 +13,7 @@ const App = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [displayData, setDisplayData] = useState([]);
   const [sortField, setSortField] = useState("");
-  const [order, setOrder] = useState("ascending");
+  const [order, setOrder] = useState("");
   const [searchText, setSearchText] = useState("");
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);

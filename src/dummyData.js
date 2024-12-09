@@ -52,7 +52,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.4,
       based_on: "355 User Reviews",
-      highlight: "",
+      highlight: "Best in Social Life",
     },
     ranking: "#01/745 in India 2025",
   },
@@ -206,7 +206,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.6,
       based_on: "450 User Reviews",
-      highlight: "Top-tier placements and infrastructure",
+      highlight: "Best in Social Life",
     },
     ranking: "#99 in India 2025",
   },
@@ -225,7 +225,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.3,
       based_on: "310 User Reviews",
-      highlight: "Strong research opportunities",
+      highlight: "research opportunities",
     },
     ranking: "#25 in India 2025",
   },
@@ -245,7 +245,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.0,
       based_on: "200 User Reviews",
-      highlight: "Research and innovation-driven curriculum",
+      highlight: "Best in Social Life",
     },
     ranking: "#35 in India 2025",
   },
@@ -264,7 +264,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.2,
       based_on: "370 User Reviews",
-      highlight: "World-class infrastructure and faculty",
+      highlight: "World-class infrastructure",
     },
     ranking: "#33 in India 2025",
   },
@@ -283,7 +283,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.1,
       based_on: "280 User Reviews",
-      highlight: "Strong industry connections and placements",
+      highlight: "Best in Social Life",
     },
     ranking: "#23 in India 2025",
   },
@@ -302,7 +302,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.0,
       based_on: "500 User Reviews",
-      highlight: "Affordable education with strong academics",
+      highlight: "Affordable education",
     },
     ranking: "#40 in India 2025",
   },
@@ -321,7 +321,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.4,
       based_on: "700 User Reviews",
-      highlight: "Top placements in tech companies",
+      highlight: "Top placements",
     },
     ranking: "#15 in India 2025",
   },
@@ -340,7 +340,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.5,
       based_on: "450 User Reviews",
-      highlight: "Specialized in IT with excellent placement opportunities",
+      highlight: "Specialized in IT",
     },
     ranking: "#22 in India 2025",
   },
@@ -359,7 +359,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.2,
       based_on: "520 User Reviews",
-      highlight: "Strong industry collaboration and faculty",
+      highlight: "Strong industry",
     },
     ranking: "#30 in India 2025",
   },
@@ -378,7 +378,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.1,
       based_on: "480 User Reviews",
-      highlight: "Great for core engineering branches",
+      highlight: "Best in Social Life",
     },
     ranking: "#27 in India 2025",
   },
@@ -397,7 +397,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.3,
       based_on: "400 User Reviews",
-      highlight: "Strong focus on core engineering disciplines",
+      highlight: "Strong disciplines",
     },
     ranking: "#28 in India 2025",
   },
@@ -416,7 +416,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.5,
       based_on: "350 User Reviews",
-      highlight: "State-of-the-art facilities and faculty",
+      highlight: "State-of-the-art facilities",
     },
     ranking: "#35 in India 2025",
   },
@@ -436,7 +436,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.3,
       based_on: "300 User Reviews",
-      highlight: "Focused ICT curriculum with strong placements",
+      highlight: "Focused ICT curriculum",
     },
     ranking: "#32 in India 2025",
   },
@@ -455,7 +455,7 @@ export const collegesData = [
     user_reviews: {
       rating: 4.0,
       based_on: "500 User Reviews",
-      highlight: "Dynamic curriculum and infrastructure",
+      highlight: "Dynamic curriculum",
     },
     ranking: "#40 in India 2025",
   },
@@ -474,7 +474,7 @@ export const collegesData = [
     user_reviews: {
       rating: 3.9,
       based_on: "600 User Reviews",
-      highlight: "Affordable education with good placements",
+      highlight: "Affordable education",
     },
     ranking: "#45 in India 2025",
   },
